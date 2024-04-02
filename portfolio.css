@@ -749,12 +749,15 @@ span.psw {
     }
 
     .cert-desc, .sub-certs a {
-        font-size: 0.8rem;
-        
+        font-size: 0.8rem;   
     }
-
+    
     .cert-info {
         width: 250px;
+    }
+
+    .cert-info h4{
+        margin-bottom: 5px;
     }
 
     /**************************************************************************************/
