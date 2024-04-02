@@ -11,7 +11,7 @@ body, html {
     box-sizing: border-box;
 }
 
-.first-part{
+.first-part {
     position: absolute;
     opacity: 0.3;
     z-index: -1;
@@ -165,13 +165,20 @@ h4 {
 .contact div {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+   
 }
 
-h5 {
+.content h4 {
+    margin-bottom: 15px;
+    margin-top: 0;
+    font-weight: 600;
+}
+
+.skills h4 {
     color: white;
     text-align: center;
-    font-weight: 400;
+    font-weight: 600;
+    margin: 20px;
 }
 
 .marquee {
@@ -314,6 +321,7 @@ span.psw {
 
 /* Modal Content/Box */
 .modal-content {
+    z-index: 1;
     --tw-bg-opacity: 1;
     background-color: rgb(15 23 42/var(--tw-bg-opacity));
     margin: 5% auto 15% auto;
@@ -399,6 +407,237 @@ span.psw {
     width: 0;
 }
 
+.projects p {
+    font-weight: 400;
+    margin-top: 0;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.sub-project, .sub-certs {
+    --tw-bg-opacity: 1;
+    background-color: rgb(15 23 42/var(--tw-bg-opacity));
+    border-radius: 10px;
+}
+
+.container1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    position: relative;
+}
+
+.container1>div>a {
+    color: white;
+    text-decoration: none;
+}
+
+.container-2-3 {
+    display: flex;
+}
+
+.container2, .container3 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.container2 ul, .container3 ul {
+    color: darkgray;
+}
+
+#bewise h2, #wisdom h2, #tawakkal h2 {
+    font-weight: 600;
+}
+
+.cert-desc, .sub-certs a {
+    color: darkgray;
+}
+
+.contact p, a{
+    color:darkgray;
+}
+
+@media screen and (min-width: 768px) {
+    .content {
+        padding: 80px 50px;
+        margin: 0;
+    }
+
+    .links {
+        justify-content: space-between;
+        margin-bottom: 240px;
+    }
+
+    .links a {
+        font-size: 1.5rem;
+    }
+
+    .type {
+        font-size: 2.2rem;
+    }
+
+    .first-part {
+        top: 150px;
+        left: 150px;
+        margin: 0 auto;
+    }
+
+    .first-part img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .intro-para {
+        text-align: left;
+        margin-top: 50px;
+        margin-bottom: 200px;
+        visibility: visible;
+        font-size: 1.5rem;
+    }
+
+    .field {
+        margin-top: 150px;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+    }
+
+    .projects {
+        margin-bottom: 100px;
+    }
+
+    .projects img {
+        height: 90px;
+        width: 90px;
+    }
+
+    .projects p {
+        font-size: 1.1rem;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+
+    .sub-project, .sub-certs {
+        margin-bottom: 50px;
+        padding: 50px;
+
+    }
+
+    /*********************************************************************************************************/
+    .modal-content {
+        width: 70%;
+    }
+
+    .container1 {
+        padding: 40px 20px 20px;
+        justify-content: space-evenly;
+    }
+
+    .container1 i {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        margin-bottom: 20px;
+    }
+
+    .container1>div>h2 {
+        margin-bottom: 0;
+    }
+
+    .container-2-3 {
+        flex-direction: row;
+        padding: 50px 10px;
+    }
+
+    .container2, .container3 {
+        padding: 10px 20px 20px;
+    }
+
+    .container2 ul, .container3 ul {
+        margin-top: 0;
+        font-size: 1rem;
+    }
+
+    #bewise h2, #wisdom h2, #tawakkal h2 {
+        font-size: 1.7rem;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    #bewise a, #wisdom a, #tawakkal a {
+        font-size: 0.8rem;
+        margin-left: 10px;
+    }
+
+    /*********************************************************************************************************/
+    .sub-experience {
+        margin-bottom: 70px;
+    }
+
+    .duration {
+        width: 80%;
+    }
+
+    .duration p {
+        width: 100%;
+        margin: 5px 0;
+        font-size: 1.1rem;
+    }
+
+    .description {
+        width: 100%;
+    }
+
+    .description p {
+        margin: 5px 0;
+        font-size: 1.1rem;
+    }
+
+    .marquee span {
+        font-size: 1.1rem;
+    }
+
+    .projects, .experience, .skills, .certs {
+        margin-bottom: 80px;
+    }
+
+
+    .cert-desc, .sub-certs a {
+        font-size: 1.1rem;
+        margin:5px;
+    }
+
+    .cert-info h4{
+        margin-bottom: 5px;
+    }
+
+    .contact {
+        padding-bottom: 50px;
+        width: 60%;
+    }
+
+    .contact p{
+        font-size: 1.1rem;
+    }
+
+    .contact div{
+        justify-content: space-between;
+    }
+
+    #linkedin{
+        margin-right: 152px;
+    }
+
+    #github{
+        margin-right: 172px;
+    }
+
+}
+
 @media screen and (max-width: 480px) {
 
     .content {
@@ -415,20 +654,20 @@ span.psw {
         font-size: 1.6rem;
     }
 
+    .first-part {
+        top: 100px;
+    }
+
+    .first-part img {
+        height: 100%;
+        width: 100%;
+    }
+
     .intro-para {
         text-align: left;
         margin-top: 50px;
         margin-bottom: 200px;
         visibility: visible;
-    }
-
-    .first-part{
-        top:100px;
-    }
-
-    .first-part img{
-        height:100%;
-        width:100%;
     }
 
     .projects, .experience, .skills, .certs {
@@ -440,26 +679,13 @@ span.psw {
         width: 50px;
     }
 
-    h4 {
-        margin-bottom: 5px;
-        margin-top: 0;
-        font-weight: 400;
-    }
-
     .projects p {
-        font-weight: 400;
-        margin-top: 0;
         font-size: 0.8rem;
-        color: rgba(255, 255, 255, 0.7);
-        ;
     }
 
     .sub-project, .sub-certs {
         margin-bottom: 15px;
-        --tw-bg-opacity: 1;
-        background-color: rgb(15 23 42/var(--tw-bg-opacity));
         padding: 20px;
-        border-radius: 10px;
     }
 
     .extra-info {
@@ -492,6 +718,10 @@ span.psw {
         font-size: 0.9rem;
     }
 
+    .description h4{
+        margin-bottom: 5px;
+    }
+
     .contact {
         padding-bottom: 50px;
 
@@ -504,10 +734,6 @@ span.psw {
 
     #front-end {
         margin-top: 0;
-    }
-
-    h5 {
-        margin: 30px 0;
     }
 
     .sub-certs {
@@ -524,22 +750,17 @@ span.psw {
 
     .cert-desc, .sub-certs a {
         font-size: 0.8rem;
-        color: darkgray;
+        
     }
 
-    .cert-info{
-        width:250px;
+    .cert-info {
+        width: 250px;
     }
 
     /**************************************************************************************/
+
     .container1 {
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        color: white;
-        padding:40px 20px 20px;
-        position: relative;
+        padding: 40px 20px 20px;
     }
 
     .container1 i {
@@ -553,47 +774,51 @@ span.psw {
         margin-bottom: 0;
     }
 
-    .container1>div>a {
-        color: white;
-        text-decoration: none;
+    .container-2-3 {
+        flex-direction: column;
     }
 
     .container2, .container3 {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        color: white;
         padding: 10px 20px 20px;
     }
 
-    .container2{
-        padding:20px;
+    .container2 {
+        padding: 20px;
     }
 
-    .container3{
+    .container3 {
         padding: 0px 20px 20px;
     }
 
     .container2 ul, .container3 ul {
         margin-top: 0;
         font-size: 0.8rem;
-        color: darkgray;
     }
 
-    #bewise h2, #wisdom h2, #tawakkal h2{
-        font-size:1.2rem;
+    #bewise h2, #wisdom h2, #tawakkal h2 {
+        font-size: 1.2rem;
         margin-left: 10px;
         margin-top: 10px;
     }
 
-    #bewise a, #wisdom a, #tawakkal a{
+    #bewise a, #wisdom a, #tawakkal a {
         font-size: 0.8rem;
         margin-left: 10px;
     }
 
 
-
-
     /*************************************************************/
 
+    .contact div {
+        justify-content: space-between;
+    }
+
+    #linkedin{
+        margin-right: 125px;
+    }
+
+    #github{
+        margin-right: 140px;
+    }
+    
 }
