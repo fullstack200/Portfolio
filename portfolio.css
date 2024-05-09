@@ -909,6 +909,13 @@ a {
         overflow: scroll;
     }
 
+    .modal-content{
+        width:90%;
+    }
+
+    .container-2-3{
+        padding:10px;
+    }
     .projects,
     .experience,
     .skills,
