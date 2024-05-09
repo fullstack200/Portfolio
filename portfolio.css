@@ -13,28 +13,30 @@ html {
 }
 
 a {
-	color: #18272F;
-  position: relative;
-  text-decoration: none;
+    color: #18272F;
+    position: relative;
+    text-decoration: none;
 }
 
-.logo a::before, .sub-links a::before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 4px;
-  border-radius: 4px;
-  background-color:white;
-  bottom: 0;
-  left: 0;
-  transform-origin: right;
-  transform: scaleX(0);
-  transition: transform .3s ease-in-out;
+.logo a::before,
+.sub-links a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
 }
 
-.logo a:hover::before, .sub-links a:hover::before {
-  transform-origin: left;
-  transform: scaleX(1);
+.logo a:hover::before,
+.sub-links a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
 }
 
 .first-part {
@@ -557,7 +559,7 @@ a {
         font-size: 1.2rem;
     }
 
-    .modal{
+    .modal {
         overflow: hidden;
     }
 
@@ -881,11 +883,11 @@ a {
         font-size: 1rem;
     }
 
-    .intro-para{
+    .intro-para {
         font-size: 1rem;
     }
 
-    h4{
+    h4 {
         font-size: 1rem;
     }
 
@@ -905,17 +907,18 @@ a {
         visibility: visible;
     }
 
-    .modal{
+    .modal {
         overflow: scroll;
     }
 
-    .modal-content{
-        width:90%;
+    .modal-content {
+        width: 90%;
     }
 
-    .container-2-3{
-        padding:10px;
+    .container-2-3 {
+        padding: 10px;
     }
+
     .projects,
     .experience,
     .skills,
@@ -974,7 +977,7 @@ a {
 
     .contact {
         padding-bottom: 50px;
-        width:100%;
+        width: 100%;
     }
 
     .contact>div>p {
@@ -1011,6 +1014,10 @@ a {
 
     .cert-info {
         width: 250px;
+    }
+
+    .cert-info p, .cert-info a{
+        margin-left: 0;
     }
 
     .cert-info h4 {
