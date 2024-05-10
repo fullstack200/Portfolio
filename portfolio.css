@@ -7,7 +7,24 @@ html {
     background-color: rgb(2 6 23/var(--tw-bg-opacity));
     scroll-behavior: smooth;
 }
-
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* Apply the pulse animation to the link */
+  .animated-link {
+    animation: pulse 2s infinite;
+    text-decoration: none; /* Remove default underline */
+    color: white; /* Change link color */
+  }
 * {
     box-sizing: border-box;
 }
@@ -932,7 +949,7 @@ a {
     }
 
     .projects p {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 
     .sub-project,
@@ -960,6 +977,7 @@ a {
     .duration p {
         width: 100%;
         margin: 5px 0;
+        font-size: 0.9rem;
     }
 
     .description {
@@ -976,7 +994,7 @@ a {
     }
 
     .marquee span {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .contact {
