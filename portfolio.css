@@ -975,6 +975,10 @@ a {
         margin-bottom: 5px;
     }
 
+    .marquee span {
+        font-size: 1rem;
+    }
+
     .contact {
         padding-bottom: 50px;
         width: 100%;
