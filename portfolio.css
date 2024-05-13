@@ -27,8 +27,6 @@ html {
     animation: pulse 2s infinite;
     text-decoration: none;
     /* Remove default underline */
-    color: white;
-    /* Change link color */
 }
 
 * {
@@ -62,7 +60,7 @@ a {
     transform: scaleX(1);
 }
 
-.contact-details>p>a::before, #bewise a::before {
+.contact-details>p>a::before, #bewise a::before, #tawakkal a::before, #wisdom a::before {
     content: '';
     position: absolute;
     width: 100%;
