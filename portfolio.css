@@ -60,7 +60,7 @@ a {
     transform: scaleX(1);
 }
 
-.contact-details>p>a::before, #bewise a::before, #tawakkal a::before, #wisdom a::before {
+.contact-details>p>a::before, #bewise a::before, #tawakkal a::before, #wisdom a::before, .cert-info a::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -509,6 +509,22 @@ span.psw {
     color: rgba(255, 255, 255, 0.7);
 }
 
+.sub-experience{
+    display: flex;
+    flex-direction: column;
+}
+
+.descNdur{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sub-experience>div>ul>li{
+    color:white;
+}
+
 .sub-project,
 .sub-certs {
     --tw-bg-opacity: 1;
@@ -646,20 +662,16 @@ a {
         margin: 50px 0;
     }
 
-    .duration {
-        width: 80%;
+    .description h4{
+        margin-bottom: 0;
     }
 
-    .description {
-        width: 100%;
+    .description p{
+        margin-top: 5px;
     }
 
-    .duration p {
-        margin: 0;
-    }
-
-    .description p {
-        margin: 10px 0;
+    .sub-experience>div>ul>li{
+        line-height: 1.8rem;
     }
 
     .sub-project>div>h4,
@@ -667,6 +679,10 @@ a {
     .skills h4,
     .cert-info h4 {
         font-size: 1.3rem;
+    }
+
+    .marquee span{
+        font-size: 1.2rem;
     }
 
     .cert-info p,
@@ -709,6 +725,7 @@ a {
     #wisdom>h2,
     #tawakkal h2 {
         margin-bottom: 5px;
+        margin-top: 0;
     }
 
     .container1 {
@@ -870,6 +887,7 @@ a {
         width: 100%;
         margin: 5px 0;
         font-size: 1.1rem;
+        text-align: end;
     }
 
     .description {
@@ -891,7 +909,6 @@ a {
     .certs {
         margin-bottom: 80px;
     }
-
 
     .cert-desc,
     .sub-certs a {
@@ -923,7 +940,6 @@ a {
     #github {
         margin-right: 172px;
     }
-
 }
 
 @media screen and (max-width: 480px) {
@@ -1018,6 +1034,7 @@ a {
         width: 100%;
         margin: 5px 0;
         font-size: 0.9rem;
+        text-align: end;
     }
 
     .description {
@@ -1031,6 +1048,14 @@ a {
 
     .description h4 {
         margin-bottom: 5px;
+    }
+
+    .sub-experience>div>ul{
+        padding-left:25px;
+    }
+
+    .sub-experience>div>ul>li{
+        font-size: 0.9rem;
     }
 
     .marquee span {
