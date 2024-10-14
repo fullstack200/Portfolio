@@ -9,5 +9,5 @@ Welcome to my personal portfolio! This website showcases my projects, skills, an
 - Fully responsive design for mobile and desktop.
 
 ## Technologies Used
-- **Frontend:** HTML, CSS, JavaScript, React
+- **Frontend:** HTML, CSS, JavaScript
 - **Deployment:** GitHub Pages
